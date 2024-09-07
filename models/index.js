@@ -14,11 +14,13 @@ const sequelize = new Sequelize(
 
 // Import all models (e.g., User)
 const User = require('./User')(sequelize, DataTypes);
+const Product = require('./Product')(sequelize, DataTypes);
 
 // Export the sequelize instance and models separately
 module.exports = {
     sequelize,
     models: {
         User,
+        Product,
     },
 };
