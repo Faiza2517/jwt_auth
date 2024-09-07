@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/orders', authMiddleware, fetchOrders);
 router.post('/orders', authMiddleware, createOrder);
-router.get('/orders/:id', authMiddleware, updateOrder);
+router.put('/orders/:id', authMiddleware, updateOrder);
 router.delete('/orders/:id', authMiddleware, deleteOrder);
 
 module.exports = router;

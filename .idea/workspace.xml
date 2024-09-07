@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8afed8e-01bf-46a6-b172-0d561b22a17c" name="Changes" comment="create product&amp;orders table and api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/orderController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/orderRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/orderRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
       <workItem from="1725622622485" duration="420000" />
       <workItem from="1725623883596" duration="548000" />
       <workItem from="1725624503356" duration="1388000" />
-      <workItem from="1725683969211" duration="14918000" />
+      <workItem from="1725683969211" duration="15673000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <option name="closed" value="true" />
@@ -115,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725703234757</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create product&amp;orders table and api">
+      <option name="closed" value="true" />
+      <created>1725704441332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725704441332</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
