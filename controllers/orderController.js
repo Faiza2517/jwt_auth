@@ -25,20 +25,17 @@ exports.updateOrder = async (req, res) => {
     try {
         const { id } = req.params;
         const { totalAmount, status } = req.body;
-        const [updated] = await Order.update({ totalAmount, status }, {
-            where: { id }
-        });
-        if (updated) {
-            const updatedOrder = await Order.findByPk(id);
-            res.status(200).json(updatedOrder);
-        } else {
-            res.status(404).json({ error: 'Order not found' });
-        }
+        const order = await Order.findByPk(id);
+        if (!order) return res.status(404).json({ error: 'Order not found' });
+        await order.update({ totalAmount, status });
+        res.status(200).json(order);
     } catch (error) {
-        console.error('Error updating order:', error.message, error.stack);
-        res.status(500).json({ error: 'Failed to update order', details: error.message });
+        console.error('Error updating order:', error); // Log the error for debugging
+        res.status(500).json({ error: 'Failed to update order' });
     }
 };
+
+
 
 exports.deleteOrder = async (req, res) => {
     try {
