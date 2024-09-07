@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8afed8e-01bf-46a6-b172-0d561b22a17c" name="Changes" comment="update code">
-      <change afterPath="$PROJECT_DIR$/controllers/productController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/20240905104437-create-product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/productRoutes.js" afterDir="false" />
+    <list default="true" id="e8afed8e-01bf-46a6-b172-0d561b22a17c" name="Changes" comment="create product table and api">
+      <change afterPath="$PROJECT_DIR$/controllers/orderController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/orderRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
@@ -77,7 +76,7 @@
       <workItem from="1725622622485" duration="420000" />
       <workItem from="1725623883596" duration="548000" />
       <workItem from="1725624503356" duration="1388000" />
-      <workItem from="1725683969211" duration="7446000" />
+      <workItem from="1725683969211" duration="13684000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <option name="closed" value="true" />
@@ -103,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725625927976</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create product table and api">
+      <option name="closed" value="true" />
+      <created>1725693157161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725693157161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update code" />
-    <option name="LAST_COMMIT_MESSAGE" value="update code" />
+    <MESSAGE value="create product table and api" />
+    <option name="LAST_COMMIT_MESSAGE" value="create product table and api" />
   </component>
 </project>

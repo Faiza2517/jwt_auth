@@ -2,6 +2,7 @@ const express = require('express');
 const { sequelize } = require('./models');
 const authRoutes = require('./routes/authRoutes'); // Import your routes
 const productRoutes = require('./routes/productRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 
 require('dotenv').config();
 
@@ -13,6 +14,7 @@ app.use(express.json());
 // Use the auth routes for `/api/auth`
 app.use('/api/auth', authRoutes);
 app.use('/api', productRoutes);
+app.use('/api', orderRoutes);
 
 const PORT = process.env.PORT || 5000;
 
