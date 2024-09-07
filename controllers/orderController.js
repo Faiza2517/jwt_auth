@@ -30,7 +30,7 @@ exports.updateOrder = async (req, res) => {
         await order.update({ totalAmount, status });
         res.status(200).json(order);
     } catch (error) {
-        console.error('Error updating order:', error); // Log the error for debugging
+        console.error('Error updating order:', error);
         res.status(500).json({ error: 'Failed to update order' });
     }
 };
@@ -42,7 +42,7 @@ exports.deleteOrder = async (req, res) => {
         const { id } = req.params;
         const deleted = await Order.destroy({ where: { id } });
         if (deleted) {
-            res.status(204).send(); // No content
+            res.status(204).send();
         } else {
             res.status(404).json({ error: 'Order not found' });
         }

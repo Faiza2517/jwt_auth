@@ -2,10 +2,10 @@ const { Product } = require('../models').models;
 
 exports.fetchProducts = async (req, res) => {
     try {
-        const products = await Product.findAll(); // Fetch all products from the database
+        const products = await Product.findAll();
         res.status(200).json(products);
     } catch (error) {
-        console.error('Error fetching products:', error); // Log the actual error
+        console.error('Error fetching products:', error);
         res.status(500).json({ error: 'Failed to fetch products' });
     }
 };

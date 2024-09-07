@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
     }
 );
 
-// Import all models (e.g., User)
+// Import all models
 const User = require('./User')(sequelize, DataTypes);
 const Product = require('./Product')(sequelize, DataTypes);
 const Order = require('./Order')(sequelize, DataTypes);

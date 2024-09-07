@@ -1,4 +1,3 @@
-// routes/productRoutes.js
 const express = require('express');
 const { createProduct, updateProduct, deleteProduct, fetchProducts} = require('../controllers/productController');
 const authMiddleware = require('../middlewares/authMiddleware');
