@@ -16,6 +16,8 @@ const sequelize = new Sequelize(
 const User = require('./User')(sequelize, DataTypes);
 const Product = require('./Product')(sequelize, DataTypes);
 const Order = require('./Order')(sequelize, DataTypes);
+const Cart = require('./Cart')(sequelize, DataTypes);
+const CartItem = require('./CartItem')(sequelize, DataTypes);
 // Export the sequelize instance and models separately
 module.exports = {
     sequelize,
@@ -23,5 +25,7 @@ module.exports = {
         User,
         Product,
         Order,
+        Cart,
+        CartItem,
     },
 };
