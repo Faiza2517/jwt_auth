@@ -14,7 +14,7 @@ exports.createOrder = async (req, res) => {
     try {
         const { userId, totalAmount, status } = req.body;
         const newOrder = await Order.create({ userId, totalAmount, status });
-        res.status(201).json(newOrder);
+        res.status(200).json(newOrder);
     } catch (error) {
         console.error('Error creating order:', error.message, error.stack);
         res.status(500).json({ error: 'Failed to create order', details: error.message });
