@@ -13,7 +13,7 @@ exports.createProduct = async (req, res) => {
     try {
         const { name, price, description, stock } = req.body;
         const newProduct = await Product.create({ name, price, description, stock });
-        res.status(201).json(newProduct);
+        res.status(200).json(newProduct);
     } catch (error) {
         res.status(500).json({ error: 'Failed to create product' });
     }
